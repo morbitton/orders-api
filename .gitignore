@@ -6,6 +6,12 @@ node_modules/
 
 #logs
 logs/
+*.log
+
 
 #artifacts
 artifacts/
+.DS_Store
+.terraform/
+*.tfstate
+*.tfstate.backup
