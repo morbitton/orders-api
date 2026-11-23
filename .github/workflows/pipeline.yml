@@ -22,7 +22,7 @@ jobs:
         run: docker build --build-arg APP_VERSION=${{ github.sha }} -t $IMAGE:${{ github.sha }} .
 
       - name: Run tests inside the image
-        run: npm test
+        run: docker run --rm $IMAGE:${{ github.sha }} npm test
 
       - name: Log in to GitHub Container Registry
         if: github.ref == 'refs/heads/main'
