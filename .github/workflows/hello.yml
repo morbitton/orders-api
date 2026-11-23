@@ -21,11 +21,12 @@ jobs:
           ls -la
 
   info1:
-  runs-on: windows-latest
-  steps:
-    - name: Print os
-      run: |
-        echo %OS%     
+    runs-on: windows-latest
+    steps:
+      - name: Print os
+        shell: cmd
+        run: |
+          echo %OS%
 
   goodbye:
     needs: info
