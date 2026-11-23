@@ -20,7 +20,7 @@ jobs:
           echo "Actor:      ${{ github.actor }}"
           ls -la
 
-  info:
+  info1:
     runs-on: windows-latest
     steps:
       - name: Print os
